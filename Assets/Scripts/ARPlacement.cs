@@ -40,7 +40,7 @@ public class ARPlacement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && targetMarker.activeSelf)
         {
-            spider.transform.position = transform.position;
+            spider.transform.SetPositionAndRotation(transform.position, transform.rotation);
 
             if (!spider.activeSelf)
             {
