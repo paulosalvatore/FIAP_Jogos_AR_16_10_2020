@@ -37,5 +37,15 @@ public class ARPlacement : MonoBehaviour
                 targetMarker.SetActive(true);
             }
         }
+
+        if (Input.GetMouseButtonDown(0) && targetMarker.activeSelf)
+        {
+            spider.transform.position = transform.position;
+
+            if (!spider.activeSelf)
+            {
+                spider.SetActive(true);
+            }
+        }
     }
 }
