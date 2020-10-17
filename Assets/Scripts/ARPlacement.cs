@@ -40,12 +40,8 @@ public class ARPlacement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && targetMarker.activeSelf)
         {
-            spider.transform.SetPositionAndRotation(transform.position, transform.rotation);
-
-            if (!spider.activeSelf)
-            {
-                spider.SetActive(true);
-            }
+            var spiderClone = Instantiate(spider, transform.position, transform.rotation);
+            spiderClone.SetActive(true);
         }
     }
 }
