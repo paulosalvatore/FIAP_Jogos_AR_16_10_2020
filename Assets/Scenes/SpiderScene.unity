@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 397182810}
   - component: {fileID: 397182813}
   - component: {fileID: 397182812}
+  - component: {fileID: 397182814}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -291,6 +292,18 @@ MonoBehaviour:
   m_PlanePrefab: {fileID: 3452259864165031769, guid: 0ac41393c5be3fb489e43a7e6c565264,
     type: 3}
   m_DetectionMode: -1
+--- !u!114 &397182814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397182809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &601701833
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -300,7 +313,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100122, guid: e3395f0e332d13e46b54f7c463c59f36, type: 3}
       propertyPath: m_Name
-      value: tarantula_low_004
+      value: Spider
       objectReference: {fileID: 0}
     - target: {fileID: 100122, guid: e3395f0e332d13e46b54f7c463c59f36, type: 3}
       propertyPath: m_IsActive
@@ -364,6 +377,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3395f0e332d13e46b54f7c463c59f36, type: 3}
+--- !u!1 &601701834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100122, guid: e3395f0e332d13e46b54f7c463c59f36,
+    type: 3}
+  m_PrefabInstance: {fileID: 601701833}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1254679148
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +562,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d6213dc2b0cd554ab9cbf348f9c552e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arRaycastManager: {fileID: 397182814}
+  targetMarker: {fileID: 141927450}
+  spider: {fileID: 601701834}
 --- !u!4 &1663144503
 Transform:
   m_ObjectHideFlags: 0
